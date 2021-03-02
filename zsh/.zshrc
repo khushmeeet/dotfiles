@@ -108,7 +108,7 @@ autoload -U compinit && compinit
 autoload -U promptinit; promptinit
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:/opt/homebrew/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/opt/homebrew/bin:$HOME/.cargo/bin:$PATH
 
 # Functions
 function cd() {
