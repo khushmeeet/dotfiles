@@ -108,7 +108,7 @@ autoload -U compinit && compinit
 autoload -U promptinit; promptinit
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:/opt/homebrew/bin:/opt/homebrew/Caskroom/miniforge/base/bin:$HOME/.cargo/bin:$GOPATH/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/opt/homebrew/bin:/opt/homebrew/Caskroom/miniforge/base/bin:$HOME/.cargo/bin:$GOPATH/bin:/opt/homebrew/opt/ruby/bin:$PATH
 
 # GOPATH
 export GOPATH=$HOME/dev/go
@@ -117,6 +117,7 @@ export GOPATH=$HOME/dev/go
 function cd() {
     builtin cd $1 && ls
 }
+
 
 function git_prepare() {
     if [ -n "$BUFFER" ];
@@ -138,6 +139,11 @@ alias c='clear'
 alias dev='cd ~/dev'
 alias h='cd ~'
 alias cat='bat'
+alias listen='sudo lsof -i -P | grep LISTEN'
+alias ls='exa'
+alias ps='procs'
+alias du='dust'
+alias grep='rg'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
