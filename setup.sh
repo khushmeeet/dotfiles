@@ -135,3 +135,4 @@ brew install gmp
 brew install libsndfile
 brew install ncurses
 brew install speex
+brew install hyperfine
