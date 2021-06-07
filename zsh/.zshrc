@@ -118,6 +118,10 @@ function cd() {
     builtin cd $1 && ls
 }
 
+function cheat() {
+    curl cheat.sh/$1
+}
+
 
 function git_prepare() {
     if [ -n "$BUFFER" ];
