@@ -111,7 +111,7 @@ autoload -U promptinit; promptinit
 export GOPATH=$HOME/dev/go
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:/opt/homebrew/bin:/opt/homebrew/Caskroom/miniforge/base/bin:$HOME/.cargo/bin:$GOPATH/bin:/opt/homebrew/opt/ruby/bin:$HOME/.ghcup/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/opt/homebrew/bin:/opt/homebrew/Caskroom/miniforge/base/bin:$HOME/.cargo/bin:$GOPATH/bin:/opt/homebrew/opt/ruby/bin:$HOME/.ghcup/bin:$HOME/.local/bin:$HOME/.poetry/bin:$PATH
 
 # Functions
 function cd() {
@@ -196,3 +196,5 @@ unset __conda_setup
 
 
 [ -f "/Users/khushmeeet/.ghcup/env" ] && source "/Users/khushmeeet/.ghcup/env" # ghcup-env
+
+export PATH="$HOME/.poetry/bin:$PATH"
