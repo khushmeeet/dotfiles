@@ -148,6 +148,11 @@ alias ls='exa'
 alias ps='procs'
 alias du='dust'
 alias grep='rg'
+alias df='duf'
+alias find='fd'
+alias ack='ag'
+alias history='mcfly'
+alias htop='btm'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -198,3 +203,6 @@ unset __conda_setup
 [ -f "/Users/khushmeeet/.ghcup/env" ] && source "/Users/khushmeeet/.ghcup/env" # ghcup-env
 
 export PATH="$HOME/.poetry/bin:$PATH"
+
+#McFly - fly through your shell history
+eval "$(mcfly init zsh)"

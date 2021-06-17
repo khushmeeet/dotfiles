@@ -29,6 +29,7 @@ brew install gobject-introspection
 brew install libssh2
 brew install opencore-amr
 brew install starship
+brew tap clementtsang/bottom
 brew install bottom
 brew install graphite2
 brew install libtasn1
@@ -138,3 +139,11 @@ brew install speex
 brew install hyperfine
 brew install neofetch
 brew install git-delta
+brew install duf
+brew install the_silver_searcher
+brew tap cantino/mcfly
+brew install mcfly
+brew install httpie
+
+pip install glances
+pip install pywhat
