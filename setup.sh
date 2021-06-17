@@ -137,3 +137,4 @@ brew install ncurses
 brew install speex
 brew install hyperfine
 brew install neofetch
+brew install git-delta
