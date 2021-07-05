@@ -12,3 +12,6 @@
 
 [interactive]
     diffFilter = delta --color-only
+[user]
+	name = khushmeeet
+	email = khushmeetsingh1996@gmail.com

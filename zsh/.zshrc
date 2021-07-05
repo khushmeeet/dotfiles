@@ -206,3 +206,14 @@ export PATH="$HOME/.poetry/bin:$PATH"
 
 #McFly - fly through your shell history
 eval "$(mcfly init zsh)"
+
+# fzf with tree command
+_fzf_comprun() {
+  local command=$1
+  shift
+
+  case "$command" in
+    cd)           fzf "$@" --preview 'tree -C {} | head -200' ;;
+    *)            fzf "$@" ;;
+  esac
+}
