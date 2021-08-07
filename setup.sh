@@ -144,6 +144,7 @@ brew install the_silver_searcher
 brew tap cantino/mcfly
 brew install mcfly
 brew install httpie
+brew install broot
 
 pip install glances
 pip install pywhat
