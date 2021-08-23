@@ -145,6 +145,7 @@ brew tap cantino/mcfly
 brew install mcfly
 brew install httpie
 brew install broot
+brew install dasel
 
 pip install glances
 pip install pywhat
