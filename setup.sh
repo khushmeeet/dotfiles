@@ -149,3 +149,4 @@ brew install dasel
 
 pip install glances
 pip install pywhat
+pip install pint
