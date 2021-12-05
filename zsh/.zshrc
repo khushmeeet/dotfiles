@@ -111,7 +111,7 @@ autoload -U promptinit; promptinit
 export GOPATH=$HOME/dev/go
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:/opt/homebrew/bin:/opt/homebrew/Caskroom/miniforge/base/bin:$HOME/.cargo/bin:$GOPATH/bin:/opt/homebrew/opt/ruby/bin:$HOME/.ghcup/bin:$HOME/.local/bin:$HOME/.poetry/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/opt/homebrew/bin:/opt/homebrew/Caskroom/miniforge/base/bin:$HOME/.cargo/bin:$GOPATH/bin:/opt/homebrew/opt/ruby/bin:$HOME/.ghcup/bin:$HOME/.local/bin:$HOME/.poetry/bin:~/.emacs.d/bin:$PATH
 
 # Functions
 function cd() {
@@ -153,7 +153,7 @@ alias find='fd'
 alias ack='ag'
 alias history='mcfly'
 alias htop='btm'
-
+alias icloud='cd /Users/khushmeeet/Library/Mobile\ Documents/com\~apple\~CloudDocs'
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -217,3 +217,5 @@ _fzf_comprun() {
     *)            fzf "$@" ;;
   esac
 }
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
