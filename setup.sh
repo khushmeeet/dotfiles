@@ -146,6 +146,7 @@ brew install mcfly
 brew install httpie
 brew install broot
 brew install dasel
+brew install librsync
 
 pip install glances
 pip install pywhat
