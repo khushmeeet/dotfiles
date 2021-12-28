@@ -115,7 +115,7 @@ export PATH=$HOME/bin:/usr/local/bin:/opt/homebrew/bin:/opt/homebrew/Caskroom/mi
 
 # Functions
 function cd() {
-    builtin cd $1 && ls
+    builtin cd $1 && exa
 }
 
 function cheat() {
