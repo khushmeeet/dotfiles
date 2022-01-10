@@ -148,6 +148,7 @@ brew install broot
 brew install dasel
 brew install librsync
 brew install fx
+brew install diff-so-fancy
 
 pip install glances
 pip install pywhat
