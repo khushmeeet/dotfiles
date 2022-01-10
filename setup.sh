@@ -147,6 +147,7 @@ brew install httpie
 brew install broot
 brew install dasel
 brew install librsync
+brew install fx
 
 pip install glances
 pip install pywhat
