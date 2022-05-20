@@ -122,6 +122,9 @@ function cheat() {
     curl cheat.sh/$1
 }
 
+function yt-video() {
+    yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --write-sub --write-auto-sub $1
+}
 
 function git_prepare() {
     if [ -n "$BUFFER" ];
