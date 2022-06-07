@@ -34,3 +34,11 @@
 	whitespace = red reverse
 [init]
 	defaultBranch = main
+[http]
+	version = HTTP/2
+	postBuffer = 524288000
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
