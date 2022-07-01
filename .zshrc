@@ -126,6 +126,10 @@ function yt-video() {
     yt-dlp -f 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio' --write-sub --write-auto-sub $1
 }
 
+function yt-audio() {
+    yt-dlp -f 'bestaudio[ext=m4a]/bestaudio' $1
+}
+
 function git_prepare() {
     if [ -n "$BUFFER" ];
     then
