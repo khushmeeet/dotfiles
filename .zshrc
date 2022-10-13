@@ -111,7 +111,7 @@ autoload -U promptinit; promptinit
 export GOPATH=$HOME/dev/go
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:/opt/homebrew/bin:/opt/homebrew/Caskroom/miniforge/base/bin:$HOME/.cargo/bin:$GOPATH/bin:/opt/homebrew/opt/ruby/bin:$HOME/.ghcup/bin:$HOME/.local/bin:$HOME/.poetry/bin:~/.emacs.d/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/opt/homebrew/bin:$HOME/.cargo/bin:$GOPATH/bin:/opt/homebrew/opt/ruby/bin:$HOME/.ghcup/bin:$HOME/.local/bin:$HOME/.poetry/bin:~/.emacs.d/bin:$PATH
 
 # Functions
 function cd() {
@@ -168,27 +168,11 @@ export NVM_DIR="$HOME/.nvm"
 #Load Starship theme
 eval "$(starship init zsh)"
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/opt/homebrew/Caskroom/miniforge/base/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/opt/homebrew/Caskroom/miniforge/base/etc/profile.d/conda.sh" ]; then
-        . "/opt/homebrew/Caskroom/miniforge/base/etc/profile.d/conda.sh"
-    else
-        export PATH="/opt/homebrew/Caskroom/miniforge/base/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-
 [ -f "/Users/khushmeeet/.ghcup/env" ] && source "/Users/khushmeeet/.ghcup/env" # ghcup-env
 
 export PATH="$HOME/.poetry/bin:$PATH"
 
-#McFly - fly through your shell history
+### McFly - fly through your shell history
 eval "$(mcfly init zsh)"
 
 # fzf with tree command
