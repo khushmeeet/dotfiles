@@ -161,6 +161,11 @@ alias ack='ag'
 alias history='mcfly'
 alias htop='btm'
 alias icloud='cd /Users/khushmeeet/Library/Mobile\ Documents/com\~apple\~CloudDocs'
+
+## pyenv setup
+alias python="$(pyenv which python)"
+alias pip="$(pyenv which pip)"
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
