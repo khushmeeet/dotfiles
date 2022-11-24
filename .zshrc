@@ -191,4 +191,9 @@ _fzf_comprun() {
   esac
 }
 
+### Pyenv shell config
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
