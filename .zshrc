@@ -147,7 +147,7 @@ bindkey "^g" git_prepare
 
 # Aliases
 alias c='clear'
-alias dev='cd ~/dev'
+alias dev='cd ~/Dev'
 alias h='cd ~'
 alias cat='bat'
 alias listen='sudo lsof -i -P | grep LISTEN'

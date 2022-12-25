@@ -13,7 +13,7 @@
 [interactive]
 	diffFilter = diff-so-fancy --patch
 [user]
-	name = khushmeeet
+	name = Khushmeet Singh
 	email = khushmeetsingh1996@gmail.com
 [core]
 	pager = diff-so-fancy | less --tabs=4 -RFX
