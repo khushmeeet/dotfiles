@@ -161,6 +161,7 @@ alias ack='ag'
 alias history='mcfly'
 alias htop='btm'
 alias icloud='cd /Users/khushmeeet/Library/Mobile\ Documents/com\~apple\~CloudDocs'
+alias k='minikube kubectl --'
 
 ## pyenv setup
 alias python="$(pyenv which python)"
