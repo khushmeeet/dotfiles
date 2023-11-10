@@ -167,6 +167,9 @@ alias k='minikube kubectl --'
 alias python="$(pyenv which python)"
 alias pip="$(pyenv which pip)"
 
+# pipenv
+export PIPENV_VENV_IN_PROJECT=1
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
@@ -203,3 +206,6 @@ eval "$(pyenv init -)"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /opt/homebrew/bin/nomad nomad
