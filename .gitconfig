@@ -17,6 +17,7 @@
 	email = khushmeetsingh1996@gmail.com
 [core]
 	pager = delta
+	excludesfile = /Users/khushmeeet/.gitignore_global
 [color]
 	ui = true
 [color "diff-highlight"]
