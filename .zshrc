@@ -116,9 +116,6 @@ export GOPATH=$HOME/dev/go
 export PYENV_ROOT="$HOME/.pyenv"
 eval "$(pyenv init -)"
 
-# If you come from bash you might have to change your $PATH.
-export PATH=~/.rye/shims:$HOME/bin:/usr/local/bin:/opt/homebrew/bin:$HOME/.cargo/bin:$GOPATH/bin:$HOME/.local/bin:~/.emacs.d/bin:$PYENV_ROOT/bin:$PATH
-
 # Functions
 function cd() {
     builtin cd $1 && eza
@@ -176,3 +173,16 @@ eval "$(mcfly init zsh)"
 
 #Starship
 eval "$(starship init zsh)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# bun completions
+[ -s "/Users/khushmeeet/.bun/_bun" ] && source "/Users/khushmeeet/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+
+# If you come from bash you might have to change your $PATH.
+export PATH=~/.rye/shims:$HOME/bin:/usr/local/bin:/opt/homebrew/bin:$HOME/.cargo/bin:$GOPATH/bin:$HOME/.local/bin:~/.emacs.d/bin:$PYENV_ROOT/bin:$BUN_INSTALL/bin:$PATH
