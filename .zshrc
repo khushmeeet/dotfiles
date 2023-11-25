@@ -148,6 +148,14 @@ function git_prepare() {
 zle -N git_prepare
 bindkey "^g" git_prepare
 
+function ai() {
+    gh copilot suggest "$1"
+}
+
+function ai-ex() {
+    gh copilot explain "$1"
+}  
+
 # Aliases
 alias c='clear'
 alias dev='cd ~/Dev'
