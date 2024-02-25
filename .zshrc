@@ -169,15 +169,12 @@ alias grep='rg'
 alias df='duf'
 alias find='fd'
 alias tree='br -s'
-alias history='mcfly'
+alias his='atuin search -i'
 alias htop='btm'
 alias icloud='cd /Users/khushmeeet/Library/Mobile\ Documents/com\~apple\~CloudDocs'
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# Mcfly
-eval "$(mcfly init zsh)"
 
 #Starship
 eval "$(starship init zsh)"
@@ -194,3 +191,5 @@ export BUN_INSTALL="$HOME/.bun"
 
 # If you come from bash you might have to change your $PATH.
 export PATH=~/.rye/shims:$HOME/bin:/usr/local/bin:/opt/homebrew/bin:$HOME/.cargo/bin:$GOPATH/bin:$HOME/.local/bin:~/.emacs.d/bin:$PYENV_ROOT/bin:$BUN_INSTALL/bin:$PATH
+
+eval "$(atuin init zsh)"
