@@ -109,12 +109,18 @@ autoload -U compinit && compinit
 autoload -U promptinit; promptinit
 autoload -U +X bashcompinit && bashcompinit
 
+# locale
+export LANG="en_US.UTF-8"
+
 # GOPATH
 export GOPATH=$HOME/dev/go
 
-#pyenv
+# pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 eval "$(pyenv init -)"
+
+# pipenv
+export PIPENV_VENV_IN_PROJECT=1
 
 # Functions
 function cd() {
@@ -192,4 +198,8 @@ export BUN_INSTALL="$HOME/.bun"
 # If you come from bash you might have to change your $PATH.
 export PATH=~/.rye/shims:$HOME/bin:/usr/local/bin:/opt/homebrew/bin:$HOME/.cargo/bin:$GOPATH/bin:$HOME/.local/bin:~/.emacs.d/bin:$PYENV_ROOT/bin:$BUN_INSTALL/bin:$PATH
 
+# Atuin
 eval "$(atuin init zsh)"
+
+# Ruby env
+eval "$(rbenv init - zsh)"
