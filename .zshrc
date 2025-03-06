@@ -115,10 +115,6 @@ export LANG="en_US.UTF-8"
 # GOPATH
 export GOPATH=$HOME/dev/go
 
-# pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-eval "$(pyenv init -)"
-
 # pipenv
 export PIPENV_VENV_IN_PROJECT=1
 
