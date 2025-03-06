@@ -9,7 +9,8 @@
     minus-style = "syntax #340001"
     syntax-theme = Monokai Extended
     navigate = true
-
+[branch]
+	sort = -committerdate
 [interactive]
 	diffFilter = delta --color-only
 [user]
@@ -17,7 +18,7 @@
 	email = khushmeetsingh1996@gmail.com
 [core]
 	pager = delta
-	excludesfile = /Users/khushmeeet/.gitignore_global
+	excludesfile = /Users/khushmeeet/.config/git/.gitignore
 [color]
 	ui = true
 [color "diff-highlight"]
@@ -33,6 +34,8 @@
 	old = red bold
 	new = green bold
 	whitespace = red reverse
+[column]
+	ui = auto
 [init]
 	defaultBranch = main
 [http]
@@ -44,3 +47,19 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 [diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+[tag]
+	sort = version:refname
+[push]
+	default = simple
+	autoSetupRemote = true
+	followTags = true
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
+[help]
+	autocorrect = prompt
