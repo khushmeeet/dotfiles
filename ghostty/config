@@ -1,1 +1,12 @@
-/Users/khushmeeet/.config/ghostty/config
+font-family = TX-02
+font-size = 12
+font-thicken = true
+theme = Argonaut
+cursor-style = block
+shell-integration-features = no-cursor
+adjust-cell-height = 35%
+macos-titlebar-style = transparent
+window-padding-balance = true
+window-save-state = always
+window-colorspace = "display-p3"
+keybind = global:ctrl+grave_accent=toggle_quick_terminal
