@@ -120,7 +120,7 @@ export PIPENV_VENV_IN_PROJECT=1
 
 # Functions
 function cd() {
-    builtin cd $1 && eza
+    z $1 && eza
 }
 
 function cheat() {
@@ -192,10 +192,13 @@ export NVM_DIR="$HOME/.nvm"
 export BUN_INSTALL="$HOME/.bun"
 
 # If you come from bash you might have to change your $PATH.
-export PATH=~/.rye/shims:$HOME/bin:/usr/local/bin:/opt/homebrew/bin:$HOME/.cargo/bin:$GOPATH/bin:$HOME/.local/bin:~/.emacs.d/bin:$PYENV_ROOT/bin:$BUN_INSTALL/bin:$PATH
+export PATH=~/.rye/shims:$HOME/bin:/usr/local/bin:/opt/homebrew/bin:$HOME/.cargo/bin:$GOPATH/bin:$HOME/.local/bin:~/.emacs.d/bin:$PYENV_ROOT/bin:$BUN_INSTALL/bin:~/.rustup/toolchains/stable-aarch64-apple-darwin/bin:$PATH
 
 # Atuin
 eval "$(atuin init zsh)"
 
 # Ruby env
 eval "$(rbenv init - zsh)"
+
+# Zoxide
+eval "$(zoxide init zsh)"
