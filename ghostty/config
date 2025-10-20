@@ -5,8 +5,9 @@ theme = Argonaut
 cursor-style = block
 shell-integration-features = no-cursor
 adjust-cell-height = 35%
-macos-titlebar-style = transparent
+macos-titlebar-style = native
 window-padding-balance = true
 window-save-state = always
 window-colorspace = "display-p3"
 keybind = global:ctrl+grave_accent=toggle_quick_terminal
+keybind = shift+enter=text:\n
